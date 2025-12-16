@@ -30,6 +30,10 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    subtitle: {
+        type: String,
+        required: false
+    },
     reviews: {
         type: Array,
         required: true,

@@ -10,6 +10,7 @@
     * - Author          : 
     * - Modification    : 
 **/
+
 import express from "express";
 
 
@@ -20,10 +21,12 @@ const productRoutes = express.Router();
 
 const getProducts = async (req, res) => {
     const products = await Product.find({});
+    
+    // Transform products to match frontend expectations
+ 
 
     res.json({
-        products,
-        pagination: {}
+        products
     })
 }
 
