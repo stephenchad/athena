@@ -25,8 +25,10 @@ const ProductCard = ({ product, loading }) => {
         p='4'
         shadow='sm'
         rounded='md'
-        w='300px'
+        w='280px'
         bg='white'
+        flex='0 0 calc(20% - 20px)'
+        minW='280px'
       >
         <Box h='220px' w='100%' overflow='hidden' rounded='md' bg='gray.50'>
           <Image
@@ -57,13 +59,12 @@ const ProductCard = ({ product, loading }) => {
           <Text fontSize='xl' fontWeight='bold' color='cyan.600'>
             ${product.price}
           </Text>
-          <IconButton aria-label='Expand' icon={<BiExpand size='20'/>} colorScheme='cyan' size='sm' variant='outline'/>
+          <IconButton aria-label='Expand' colorScheme='cyan' size='sm' variant='outline'>⤢</IconButton>
         </Flex>
       </Box>
   )
 }
 
 export default ProductCard
-
 
 

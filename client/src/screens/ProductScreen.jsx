@@ -57,7 +57,7 @@ const ProductScreen = () => {
 
   return (
     <Box>
-      <Wrap spacing='24px' justify='center' minHeight='80vh' mx={{ base: '6', md: '12', lg: '24' }}>
+      <Wrap spacing='24px' justify='center' minHeight='80vh' mx={{ base: '6', md: '12', lg: '24' }} maxW='1600px' margin='0 auto'>
         {
           products.map((product) => {
             console.log('Rendering product:', product);
